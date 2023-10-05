@@ -1,0 +1,92 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+  border: 3px solid pink;
+
+  width: 500px;
+  margin: 50px auto;
+  padding: 10px;
+  border-radius: 8px;
+}
+.App h1{
+  text-align: center;
+  font-family: "Lucida Console", "Courier New", monospace;
+  text-shadow: 5px 5px 10px black;
+
+}
+.form{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 12px;
+  border-radius: 50%;
+}
+.form input[type="text"]{
+  padding:10px;
+  width: 85%;
+  border: 1px solid #eee;
+  border-radius: 6px;
+}
+.form input[type="text"]:focus,
+.form button[type="submit"]:focus{
+  outline:none;
+}
+.form button[type="submit"]{
+  background-color: #045252;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  cursor: pointer
+}
+.todo-listItems{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.todo-item{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px
+}
+.item-content{
+  width: 60%
+}
+.todo-item button{
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  padding: 10px
+}
+.todo-item button:focus{
+  outline:none
+}
+.update-item{
+  background-color: rgb(237, 240, 48);
+  color:blue;
+}
+.delete-item{
+  background-color: rgb(59, 187, 59);
+  color:red;
+}
+.update-form{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.update-new-input{
+  width: 80%;
+  border-radius: 6px;
+  border: 1px solid #eee;
+  padding: 8px;
+  outline: none;
+}
+.update-new-btn{
+  background-color: darkorchid;
+  color: #fff;
+  cursor: pointer;
+}
